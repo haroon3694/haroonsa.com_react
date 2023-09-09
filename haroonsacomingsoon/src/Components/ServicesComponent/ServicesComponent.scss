@@ -1,0 +1,17 @@
+#services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+
+.servicesCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}

@@ -1,0 +1,30 @@
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    background-image: radial-gradient(#000000 1px, transparent 1px);
+    background-size: 33px 33px;
+    background-color: #ffffff;
+
+    .portfolio__header{
+        justify-content: right;
+        align-items: right;
+        text-align: right;
+        overflow: hidden !important;
+    }
+
+    
+    .portfolioCard{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: right;
+        gap: 8rem;
+        flex-wrap: wrap;
+        margin: 3rem 0;
+        overflow: hidden !important;
+    }
+}
+
+

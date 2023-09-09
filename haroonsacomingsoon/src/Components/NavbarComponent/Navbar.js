@@ -13,7 +13,6 @@ import {
   DropdownItem,
   NavbarText,
 } from 'reactstrap';
-import avatar from "../../assets/avatar.png"
 
 const NavbarComponent = (args) =>{
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +20,9 @@ const NavbarComponent = (args) =>{
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="ggwo">
+    <div className="navbar__sticky">
       <Navbar {...args}>
-        <NavbarBrand href="/"><img src={avatar} alt="logo" width="120px" /></NavbarBrand>
+        <NavbarBrand href="/">Sa.</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
@@ -39,7 +38,7 @@ const NavbarComponent = (args) =>{
               <DropdownToggle nav caret>
                 Options
               </DropdownToggle>
-              <DropdownMenu end>
+              <DropdownMenu right>
                 <DropdownItem>Option 1</DropdownItem>
                 <DropdownItem>Option 2</DropdownItem>
                 <DropdownItem divider />
