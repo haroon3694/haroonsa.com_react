@@ -14,6 +14,8 @@ import {
   NavbarText,
 } from 'reactstrap';
 
+import logo from "../../assets/logo.png"
+
 const NavbarComponent = (args) =>{
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +24,7 @@ const NavbarComponent = (args) =>{
   return (
     <div className="navbar__sticky">
       <Navbar {...args}>
-        <NavbarBrand href="/">Sa.</NavbarBrand>
+        <NavbarBrand href="/"><img src={logo} width="60px" alt="" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
