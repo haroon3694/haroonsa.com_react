@@ -32,15 +32,15 @@ const portfolioCardData = [
     },
 ]
 
-const portfolioData= portfolioCardData.map((value)=> (
-    <Card 
-    key={value.id} 
-    image={value.image} 
-    title={value.title} 
-    subtitle={value.subtitle} 
-    text={value.text} 
-    button={value.button}/>
-))
+// const portfolioData= portfolioCardData.map((value)=> (
+//     <Card 
+//     key={value.id} 
+//     image={value.image} 
+//     title={value.title} 
+//     subtitle={value.subtitle} 
+//     text={value.text} 
+//     button={value.button}/>
+// ))
 
 
 
@@ -55,47 +55,22 @@ const PortfolioComponent = () => {
     </span>
     <div className="portfolioCardContainer">
         <div className="portfolioCard">
-           {portfolioData}
+        <OwlCarousel className='owl-theme owl-rtl' nav center>
+            {
+                portfolioCardData.map((value)=> (
+                    <Card 
+                    key={value.id} 
+                    image={value.image} 
+                    title={value.title} 
+                    subtitle={value.subtitle} 
+                    text={value.text} 
+                    button={value.button}/>
+                ))
+            }
+        </OwlCarousel>
         </div>
     </div>
-    <OwlCarousel className='owl-theme owl-rtl' nav center stagePadding={10}>
-    <div className='item'>
-        <h4>1</h4>
-    </div>
-    <div className='item'>
-        <h4>2</h4>
-    </div>
-    <div className='item'>
-        <h4>3</h4>
-    </div>
-    <div className='item'>
-        <h4>4</h4>
-    </div>
-    <div className='item'>
-        <h4>5</h4>
-    </div>
-    <div className='item'>
-        <h4>6</h4>
-    </div>
-    <div className='item'>
-        <h4>7</h4>
-    </div>
-    <div className='item'>
-        <h4>8</h4>
-    </div>
-    <div className='item'>
-        <h4>9</h4>
-    </div>
-    <div className='item'>
-        <h4>10</h4>
-    </div>
-    <div className='item'>
-        <h4>11</h4>
-    </div>
-    <div className='item'>
-        <h4>12</h4>
-    </div>
-</OwlCarousel>;
+   
 </section>
   )
 }
