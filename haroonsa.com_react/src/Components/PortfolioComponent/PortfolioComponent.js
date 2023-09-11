@@ -25,10 +25,10 @@ const portfolioCardData = [
     {
         id:3,
         image: "https://placehold.co/600x400",
-        title : "title2",
-        subtitle: "subtitle2",
-        text: "text2",
-        button: "button2"
+        title : "title3",
+        subtitle: "subtitle3",
+        text: "text3",
+        button: "button3"
     },
 ]
 
