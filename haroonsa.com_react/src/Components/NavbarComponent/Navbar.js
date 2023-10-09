@@ -21,7 +21,7 @@ const NavbarComponent = (args) =>{
     <div className="navbar__sticky">
       <Navbar {...args}>
         <NavbarBrand className='text-center mx-auto' href="/"><img src={logo} width="60px" alt="" /></NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        {/* <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
@@ -33,7 +33,7 @@ const NavbarComponent = (args) =>{
               </NavLink>
             </NavItem>
           </Nav>
-        </Collapse>
+        </Collapse> */}
       </Navbar>
     </div>
   );

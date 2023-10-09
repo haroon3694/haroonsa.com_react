@@ -16,30 +16,33 @@ const servicesCardData = [
         image: uiux,
         title : "What I can do for you",
         subtitle: "Faster, better products that your users love. Here's all the services I provide:",
-        text: "* design Strategy"
-        // li1: "Design Strategy",
-        // li2: "Web and Mobile App Design",
-        // li3: "Front-end Development"
+        text:   <ul>
+                    <li>Design Strategy</li>
+                    <li>Web and Mobile App Design</li>
+                    <li>Front-end Development</li>
+                </ul>
     },
     {
         id:2,
         image: app,
         title : "Applications I'm fluent in",
-        subtitle: "Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.",
-        text: "Sketch"
-        // li1: "Sketch",
-        // li2: "Webflow",
-        // li3: "Figma"
+        subtitle: "Every developer needs the right tools to do the perfect job. Thankfully, I'm multilingual.",
+        text:   <ul>
+                    <li>HTML5,CSS3</li>
+                    <li>Bootstrap,TailWind,Material</li>
+                    <li>JS, React</li>
+                </ul>
     },
     {
         id:3,
         image: expect,
         title : "What you can expect",
-        subtitle: "I design products that are more than pretty. I make them shippable and usable.",
-        text: "Clean and Functional"
-        // li1: "Clean and functional",
-        // li2: "Device and user friendly",
-        // li3: "Efficient and maintainable"
+        subtitle: "I develop products that are more than pretty. I make them responsive and usable.",
+        text:   <ul>
+                    <li>Clean and functional</li>
+                    <li>Device and user friendly</li>
+                    <li>Efficient and maintainable</li>
+                </ul>
     },
 ]
 

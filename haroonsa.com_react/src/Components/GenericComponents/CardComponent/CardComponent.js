@@ -25,12 +25,6 @@ const CardComponent = (props) => {
             </CardSubtitle>
             <CardText className=''>
               {props.text}
-              {/* <ul>
-                <li>{props.li1}</li>
-                <li>{props.li2}</li>
-                <li>{props.li3}</li>
-              </ul>
-              {props.listitem}            */}
             </CardText>
             {/* <div className="btn btn-outline-primary">
             {props.button}
