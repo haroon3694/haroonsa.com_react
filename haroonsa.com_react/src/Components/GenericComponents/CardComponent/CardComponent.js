@@ -14,21 +14,27 @@ const CardComponent = (props) => {
             src={props.image}
         />
         <CardBody>
-            <CardTitle tag="h5">
+            <CardTitle className='pt-2' tag="h5">
             {props.title}
             </CardTitle>
             <CardSubtitle
-            className="mb-2 text-muted"
+            className="mb-2 pt-3"
             tag="h6"
             >
             {props.subtitle}
             </CardSubtitle>
-            <CardText>
-            {props.text}
+            <CardText className=''>
+              {props.text}
+              {/* <ul>
+                <li>{props.li1}</li>
+                <li>{props.li2}</li>
+                <li>{props.li3}</li>
+              </ul>
+              {props.listitem}            */}
             </CardText>
-            <div className="btn btn-outline-primary">
+            {/* <div className="btn btn-outline-primary">
             {props.button}
-            </div>
+            </div> */}
         </CardBody>
     </Card>
   )

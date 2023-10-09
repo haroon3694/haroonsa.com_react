@@ -12,7 +12,6 @@ const portfolioCardData = [
         title : "title1",
         subtitle: "subtitle1",
         text: "text1",
-        button: "button1"
     },
     {
         id:2,
@@ -20,7 +19,6 @@ const portfolioCardData = [
         title : "title2",
         subtitle: "subtitle2",
         text: "text2",
-        button: "button2"
     },
     {
         id:3,
@@ -28,7 +26,6 @@ const portfolioCardData = [
         title : "title3",
         subtitle: "subtitle3",
         text: "text3",
-        button: "button3"
     },
 ]
 
@@ -55,7 +52,15 @@ const PortfolioComponent = () => {
     </span>
     <div className="portfolioCardContainer">
         <div className="portfolioCard">
-        <OwlCarousel className='owl-theme owl-rtl' nav center>
+        <OwlCarousel
+            className='owl-theme owl-rtl' 
+            nav 
+            center
+            autoplay={true}
+            autoplayHoverPause={true}
+            loop={true}
+            autoplayTimeout= {1000}
+             >
             {
                 portfolioCardData.map((value)=> (
                     <Card 

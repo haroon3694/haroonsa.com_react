@@ -6,13 +6,15 @@
     overflow: hidden;
     position: relative;
 
-    img{
+    .hero__image{
         position: absolute;
-        top: 15rem;
+        top: 1rem;
         z-index: -1;
-        right: 0;
-        object-fit: cover;
+        right: 4rem;
+        object-fit: contain;
         justify-content: center;
+        max-width: 600px;
+        max-height: 80vh;
     }
 
     .hero__content{
@@ -32,7 +34,18 @@
         padding: 1rem;
         margin: 1rem 0;
         border-radius: 25px;
+        color: black !important;
+        border: 1px solid black !important;
+        transition: 0.8s ease;
+    }
+
+    .hero__button:hover{
+        max-width: 325px !important;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 10px;
+        color: white !important;
+        background: black !important;
     }
 
 }
-
